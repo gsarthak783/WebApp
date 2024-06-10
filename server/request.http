@@ -1,0 +1,52 @@
+get http://localhost:7000/user-api/users
+
+###
+get http://localhost:7000/user-api/user/ravi
+
+
+###
+post http://localhost:7000/user-api/user
+Content-Type: application/json
+
+{
+    "username":"bhavesh",
+    "email":"bhavesh@gmail.com",
+    "password":"bhavesh"
+}
+
+###
+put http://localhost:7000/user-api/user
+Content-Type: application/json
+
+{
+    "username":"bhanu",
+    "email":"bhanu@gmail.com",
+    "password":"bhanu"
+}
+
+###
+delete http://localhost:7000/user-api/user/bhanu
+
+###
+post http://localhost:7000/user-api/user-login
+Content-Type: application/json
+
+{
+    "username":"bhanu",
+    "password":"bhau"
+}
+
+###
+get http://localhost:7000/product-api/products
+
+###
+get http://localhost:7000/product-api/product/seller1
+
+
+###
+get http://localhost:7000/cart-api/carts
+
+###
+get http://localhost:7000/cart-api/cart/sarthak
+
+
